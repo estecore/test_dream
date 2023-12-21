@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+
     <title>Dream Catcher</title>
 
 </head>
@@ -31,18 +34,18 @@
                 <div class="header__inner">
                     <img class="logo" src="assets/images/svg/logo.svg" alt="">
                     <nav class="nav">
-                        <a href="#" class="nav__link">Home</a>
-                        <a href="#" class="nav__link">Catalog</a>
-                        <a href="#" class="nav__link">Special</a>
-                        <a href="#" class="nav__link">Blog</a>
-                        <a href="#" class="nav__link">Mood</a>
+                        <a href="#intro" class="nav__link">Home</a>
+                        <a href="#catalog" class="nav__link">Catalog</a>
+                        <a href="#special" class="nav__link">Special</a>
+                        <a href="#blog" class="nav__link">Blog</a>
+                        <a href="#mood" class="nav__link">Mood</a>
                     </nav>
                 </div>
             </div> <!-- /.container -->
         </header>
         <!-- /header -->
         <!-- intro -->
-        <section class="section section--intro">
+        <section class="section section--intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
                     <div class="intro__item">
@@ -64,7 +67,7 @@
         </section>
         <!-- /intro -->
         <!-- catalog -->
-        <section class="section section--catalog">
+        <section class="section section--catalog" id="catalog">
             <div class="container">
                 <h2 class="block__title">Catalog</h2>
         
@@ -107,7 +110,7 @@
         </section>
         <!-- /catalog -->
         <!-- special -->
-        <section class="section section--special">
+        <section class="section section--special" id="special">
             <div class="container">
                 <h2 class="block__title block__title--special">Special Offer!</h2>
                 <span class="block__subtitle block__subtitle--special">
@@ -120,7 +123,7 @@
                 <form action="" class="form">
                     <input type="text" class="form__input" placeholder="Name">
                     <input type="tel" class="form__input" placeholder="Tel:">
-                    <textarea class="form__input" name="" id="" cols="30" rows="10" placeholder="Wishes based on emotions:"></textarea>
+                    <textarea class="form__input form__input--area" name="" id="" cols="30" rows="10" placeholder="Wishes based on emotions:"></textarea>
                     <a href="#" class="btn btn--special">Dream About It</a>
                 </form>
         
@@ -128,38 +131,67 @@
         </section>
         <!-- /.special -->
         <!-- blog -->
-        <section class="section section--blog">
+        <section class="section section--blog" id="blog">
             <div class="container">
 
                 <h2 class="block__title">Dream Designers Blog</h2>
                 <span class="block__subtitle">And here our magnificent dream catchers will tell you how they catch such amazing dreams.</span>
 
-                <div class="slider">
-                    <div class="card card--slider">
-                        <img class="card__img" src="assets/images/cards/card__slider/img.png" alt="">
-                        <span class="card__text">
-                            Did you know that...
-                            A dream catcher (Ojibwe: asabikeshiinh, an inanimate form of the word "spider", or more modern version - bawaajige nagwaagan "dream snare") is an Indian amulet that protects the sleeper from evil spirits and...
-                        </span>
-                        <a href="#" class="slider__link">Learn more...</a>
+                <div class="slider demo">
+                    <div>
+                        <div class="card card--slider">
+                            <img class="card__img" src="assets/images/cards/card__slider/img.png" alt="">
+                            <span class="card__text">
+                                Did you know that...
+                                A dream catcher (Ojibwe: asabikeshiinh, an inanimate form of the word "spider", or more modern version - bawaajige nagwaagan "dream snare") is an Indian amulet that protects the sleeper from evil spirits and...
+                            </span>
+                            <a href="#" class="slider__link">Learn more...</a>
+                        </div>
                     </div>
         
-                    <div class="card card--slider">
-                        <img class="card__img" src="assets/images/cards/card__slider/img-1.png" alt="">
-                        <span class="card__text">
-                            Did you know that...
-                            Our dream designers never repeat themselves.
-                            All dreams are absolutely unique...
-                        </span>
-                        <a href="#" class="slider__link">Learn more...</a>
+                    <div>
+                        <div class="card card--slider">
+                            <img class="card__img" src="assets/images/cards/card__slider/img-1.png" alt="">
+                            <span class="card__text">
+                                Did you know that...
+                                Our dream designers never repeat themselves.
+                                All dreams are absolutely unique...
+                            </span>
+                            <a href="#" class="slider__link">Learn more...</a>
+                        </div>
                     </div>
+
+                    <div>
+                        <div class="card card--slider">
+                            <img class="card__img" src="assets/images/cards/card__slider/img-1.png" alt="">
+                            <span class="card__text">
+                                Did you know that...
+                                Our dream designers never repeat themselves.
+                                All dreams are absolutely unique...
+                            </span>
+                            <a href="#" class="slider__link">Learn more...</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card card--slider">
+                            <img class="card__img" src="assets/images/cards/card__slider/img-1.png" alt="">
+                            <span class="card__text">
+                                Did you know that...
+                                Our dream designers never repeat themselves.
+                                All dreams are absolutely unique...
+                            </span>
+                            <a href="#" class="slider__link">Learn more...</a>
+                        </div>
+                    </div>
+
                 </div> <!-- /.slider -->
 
             </div> <!-- /.container -->
         </section>
         <!-- /blog -->
         <!-- mood -->
-        <section class="section section--mood">
+        <section class="section section--mood" id="mood">
             <div class="container">
 
                 <h2 class="block__title">Mood</h2>
@@ -220,20 +252,20 @@
                         <img class="logo" src="assets/images/svg/logo.svg" alt="">
                         <span class="footer__contact">Contacts: New-Yourk city, Lenina street, 45-22</span>
                         <div class="footer__icon">
-                            <a href="#" class="icon"><img src="assets/images/svg/Vector.svg" alt=""></a>
-                            <a href="#" class="icon"><img src="assets/images/svg/Vector-1.svg" alt=""></a>
-                            <a href="#" class="icon"><img src="assets/images/svg/Vector-2.svg" alt=""></a>
+                            <a href="#" target="_blank" class="icon"><img src="assets/images/svg/Vector.svg" alt=""></a>
+                            <a href="#" target="_blank" class="icon"><img src="assets/images/svg/Vector-1.svg" alt=""></a>
+                            <a href="#" target="_blank" class="icon"><img src="assets/images/svg/Vector-2.svg" alt=""></a>
                         </div>
                     </div>
 
                     <div class="footer__col">
-                        <div class="footer__nav">
-                            <a href="#" class="nav__link nav__link--footer">Home</a>
-                            <a href="#" class="nav__link nav__link--footer">Catalog</a>
-                            <a href="#" class="nav__link nav__link--footer">Special</a>
-                            <a href="#" class="nav__link nav__link--footer">Blog</a>
-                            <a href="#" class="nav__link nav__link--footer">Mood</a>
-                        </div>
+                        <nav class="nav nav--footer">
+                            <a href="#intro" class="nav__link nav__link--footer">Home</a>
+                            <a href="#catalog" class="nav__link nav__link--footer">Catalog</a>
+                            <a href="#special" class="nav__link nav__link--footer">Special</a>
+                            <a href="#blog" class="nav__link nav__link--footer">Blog</a>
+                            <a href="#mood" class="nav__link nav__link--footer">Mood</a>
+                        </nav>
                     </div>
 
                 </div>
@@ -246,6 +278,13 @@
 
 
     </div> <!-- /.page -->
+
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- /js -->
 
     
 </body>

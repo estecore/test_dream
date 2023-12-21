@@ -114,7 +114,7 @@ a {
 .btn:hover {
     background: #A091E5;
 
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .btn:active {
@@ -175,7 +175,8 @@ a {
     margin: 0;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link.active {
     font-weight: 800;
 }
 
@@ -230,9 +231,12 @@ a {
 
 .card {
     margin-right: 70px;
+    width: 370px;
+    height: 500px;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
     text-align: center;
@@ -292,6 +296,15 @@ a {
     color: rgba(54, 52, 102, 0.50);
     font-size: 16px;
     font-weight: 700;
+
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+}
+
+.form__input--area {
+    width: 450px;
+    height: 90px;
 }
 
 .btn--special {
@@ -313,6 +326,10 @@ a {
     color: #333;
     font-size: 20px;
     font-weight: 800;
+}
+
+.card--slider:hover {
+    transform: none;
 }
 
 
@@ -412,7 +429,7 @@ a {
     transform: scale(1.1);
 }
 
-.footer__nav {
+.nav--footer {
     display: flex;
     flex-direction: column;
     text-align: right;
